@@ -17,7 +17,7 @@ time.sleep(2)
 Intro1 = " \n Meg accidently revealed the kill code in one of her edge classes. \n   You must find out who secretly knows the kill code"
 
 print(Intro1)
-time.sleep(4)
+time.sleep(5)
 
 students = ["sara", "sarim", "haya", "azmain"]
 import random
@@ -33,7 +33,7 @@ while y < 4 :
 
 g = input("\nYou only have 2 guesses \nWho knows the kill code? ")
 
-for guess in range(1) :
+for guess in range(2) :
 
     if g == "mohammed" :
         print("You guessed it!")
@@ -41,11 +41,48 @@ for guess in range(1) :
 
     else:
         print("Incorrect")
-        g = input("\nAnother Guess?")
+        g = input("\nAnother Guess? ")
+        if g != "mohammed" :
+            print("Nachos has taken over")
+            exit()
+time.sleep(3)
+print("Let's go ask Mohammed!")
+time.sleep(2)
+print("       ____________________        ")
+print("      /     Hello, I'm     \       ")
+print("     /   Mohammed. Is there \      ")
+print("    |     Something I can    |     ")
+print("     \  help you with??     /      ")
+print("      \  __________________/       ")
+print("       |/                          ")
+
+question = input("What is your question: ")
 
 
+while question != "what is the kill code?" :
+    question = input("\nAre you sure that is the question you want to ask?")
 
+response = ["The kill code?", "Was it 11100??", "oh wait no", "I shouldn't have said that", "What?? Kill Code I don't know any kill code"]
 
+y = 0
+while y < 5 :
+    print(response[y])
+    time.sleep(1)
+    y = y + 1
+
+task1conc = "    Congrats! You have the kill code. \nHowever you must enter this code in Nacho's main server "
+
+print(task1conc)
+
+print("Task Two")
+time.sleep(2)
+
+Intro2 = "         We must find Meg's secret Lab.\n    And enter the kill code in Nacho's main server."
+print("Intro2")
+
+Intro2.2 = "To find her secret lab, let's take a closer look at her rock collection. \n"
+
+rock = input("You only have permission to read about 3 of her rocks. \nEnter a number from 1-10 to read about the rock in her rock collection: ")
 
 
 

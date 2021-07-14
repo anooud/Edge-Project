@@ -70,9 +70,13 @@ while y < 5 :
     time.sleep(1)
     y = y + 1
 
-task1conc = "    Congrats! You have the kill code. \nHowever you must enter this code in Nacho's main server "
+time.sleep(1)
+
+task1conc = "    \nCongrats! You have the kill code. \nHowever you must enter this code in Nacho's main server "
 
 print(task1conc)
+
+time.sleep(1)
 
 print("\nTask Two")
 time.sleep(2)
@@ -80,9 +84,10 @@ time.sleep(2)
 Intro2 = "         We must find Meg's secret Lab.\n    And enter the kill code in Nacho's main server."
 print(Intro2)
 
-Intro202 = "To find her secret lab, let's take a closer look at her rock collection. \n"
+time.sleep(2)
 
-rocknum = input("\nYou only have permission to read about 3 of her rocks. \nEnter a number from 1-10 to read about the rock in her rock collection: ")
+Intro202 = "To find her secret lab, let's take a closer look at her rock collection. \n"
+print(Intro202)
 
 class rock :
     def __init__(self, num, name, des) :
@@ -109,24 +114,42 @@ for line in file :
     rock_list.append(temp_rock)
 file.close()
 
+
 for guess in range(3) :
+    rocknum = input("\nYou only have permission to read about 3 of her rocks. \nEnter a number from 1-10 to read about the rock in her rock collection: ")
     for rock in rock_list :
+
         if rocknum == rock.get_num() :
             print(rock)
-            rocknum = input("\nYou only have permission to read about 3 of her rocks. \nEnter a number from 1-10 to read about the rock in her rock collection: ")
-
-        else :
-            print("Error")
 
 
+mid2 = "\nAfter reading about Meg's Rock Collection, You must now guess where her lab is"
+print(mid2)
+
+location = input("\nYou have 2 Guesses \nWhat is the location of Meg's secret lab? ")
+
+for guess in range(1) :
+    if location == "Pittsburgh, Pennsylvania" :
+        print("That's Right!!")
+        break
+
+    else:
+        print("Try Again")
+        location = input("Where is Meg's secret lab??")
+        if location != "Pittsburgh, Pennsylvania" :
+            print("Nachos has taken over")
+            exit()
 
 
 
 
-for rock in rock_list :
-    if rocknum ==  rock.get_num() :
-        print(rock)
-        rocknum = input("\nYou only have permission to read about 3 of her rocks. \nEnter a number from 1-10 to read about the rock in her rock collection: ")
+
+
+
+
+
+
+
 
 
 

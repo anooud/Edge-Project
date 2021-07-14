@@ -82,13 +82,16 @@ print(Intro2)
 
 Intro202 = "To find her secret lab, let's take a closer look at her rock collection. \n"
 
-rocknum = input("You only have permission to read about 3 of her rocks. \nEnter a number from 1-10 to read about the rock in her rock collection: ")
+rocknum = input("\nYou only have permission to read about 3 of her rocks. \nEnter a number from 1-10 to read about the rock in her rock collection: ")
 
 class rock :
     def __init__(self, num, name, des) :
         self.num = num
         self.name = name
         self.des = des
+
+    def get_num(self) :
+        return self.num
 
     def __repr__(self) :
         return self.num + " " + self.name + "\n" + self.des
@@ -106,8 +109,28 @@ for line in file :
     rock_list.append(temp_rock)
 file.close()
 
+for guess in range(3) :
+    for rock in rock_list :
+        if rocknum == rock.get_num() :
+            print(rock)
+            rocknum = input("\nYou only have permission to read about 3 of her rocks. \nEnter a number from 1-10 to read about the rock in her rock collection: ")
 
-print(rock_list[0])
+        else :
+            print("Error")
+
+
+
+
+
+
+for rock in rock_list :
+    if rocknum ==  rock.get_num() :
+        print(rock)
+        rocknum = input("\nYou only have permission to read about 3 of her rocks. \nEnter a number from 1-10 to read about the rock in her rock collection: ")
+
+
+
+
 
 
 

@@ -56,13 +56,13 @@ print("     \  help you with??     /      ")
 print("      \  __________________/       ")
 print("       |/                          ")
 
-question = input("What is your question: ")
+question = input("\nWhat is your question: ")
 
 
 while question != "what is the kill code?" :
     question = input("\nAre you sure that is the question you want to ask?")
 
-response = ["The kill code?", "Was it 11100??", "oh wait no", "I shouldn't have said that", "What?? Kill Code I don't know any kill code"]
+response = ["\nThe kill code?", "Was it 11100??", "oh wait no", "I shouldn't have said that", "What?? Kill Code I don't know any kill code"]
 
 y = 0
 while y < 5 :
@@ -74,15 +74,40 @@ task1conc = "    Congrats! You have the kill code. \nHowever you must enter this
 
 print(task1conc)
 
-print("Task Two")
+print("\nTask Two")
 time.sleep(2)
 
 Intro2 = "         We must find Meg's secret Lab.\n    And enter the kill code in Nacho's main server."
-print("Intro2")
+print(Intro2)
 
-Intro2.2 = "To find her secret lab, let's take a closer look at her rock collection. \n"
+Intro202 = "To find her secret lab, let's take a closer look at her rock collection. \n"
 
-rock = input("You only have permission to read about 3 of her rocks. \nEnter a number from 1-10 to read about the rock in her rock collection: ")
+rocknum = input("You only have permission to read about 3 of her rocks. \nEnter a number from 1-10 to read about the rock in her rock collection: ")
+
+class rock :
+    def __init__(self, num, name, des) :
+        self.num = num
+        self.name = name
+        self.des = des
+
+    def __repr__(self) :
+        return self.num + " " + self.name + "\n" + self.des
+
+
+file = open("/Users/alanooudalthani/Documents/GitHub/Edge-Project/Rocks2.txt","r")
+
+
+rock_list = []
+for line in file :
+    line_splitted = line.split("-")
+    temp_rock = rock(line_splitted[0],
+    line_splitted[1],
+    line_splitted[2].rstrip('\n'))
+    rock_list.append(temp_rock)
+file.close()
+
+
+print(rock_list[0])
 
 
 

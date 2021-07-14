@@ -1,0 +1,10 @@
+1-Tonalite -Tonalite is an igneous, plutonic (intrusive) rock, of felsic composition, with phaneritic texture. This rock was found in Sweden.
+2-Siltstone-Siltstone, also known as aleurolite is a classic sedimentary rock that is composed mostly of silt. This rock was found in Pittsburg, Pennsylvania.
+3-Chalk-Chalk is a soft, white, porous, sedimentary carbonate rock, a form of limestone composed of the mineral calcite and originally formed deep under the sea by the compression of microscopic plankton which had fallen to the sea floor. This rock was found in France. 
+4-Claystone-Clayton are a type of Murdock. They are a class of fine-grained siliciclastic sedimentary rocks. Other types include mudstone. This rock was found in Pittsburg, Pennsylvania.
+5-Breccia-Breccia is a sedimentary rock composed of broken fragments of minerals or rocks cemented together by a fine-grained matrix that can be similar to or different from the composition of the fragments. This rock was found  in the Canary Islands. 
+6-Dolomite-Dolomite is a type of limestone. It is rich in magnesium and calcium carbonate. It also has smaller amounts of several other minerals. This rock was found in Pittsburg, Pennsylvania.
+7-Tufa-Tufa is a variety of limestone formed when carbonate minerals precipitate out of ambient temperature water. This rock was found in Mono Lake, California. 
+8-Norite-Norite is a magic intrusive igneous rock composed largely of the calcium-rich plagioclase labradorite, orthopyroxene, and olivine. This rock was found in Greenland.
+9-Shale-Shale is a fine-grained, clastic sedimentary rock, formed from mud that is a mix of flakes of clay minerals and tiny fragments other minerals, especially quartz and calcite. This rock was found in Pittsburg, Pennsylvania. 
+10-Harzburgite-Harzburgite, an ultramafic, igneous rock, is a variety of peridotite consisting mostly of the two minerals olivine and low-calcium pyroxene; it is named for occurrences in the Harz Mountains of Germany. This rock was found in Madagascar.  

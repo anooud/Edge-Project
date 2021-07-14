@@ -122,41 +122,31 @@ for guess in range(3) :
         if rocknum == rock.get_num() :
             print(rock)
 
-
+time.sleep(2)
 mid2 = "\nAfter reading about Meg's Rock Collection, You must now guess where her lab is"
 print(mid2)
-
+time.sleep(1)
 location = input("\nYou have 2 Guesses \nWhat is the location of Meg's secret lab? ")
 
 for guess in range(1) :
-    if location == "Pittsburgh, Pennsylvania" :
-        print("That's Right!!")
-        break
-
-    else:
+    if location != "Pittsburgh, Pennsylvania" :
         print("Try Again")
-        location = input("Where is Meg's secret lab??")
+        location = input("Where is Meg's secret lab?? ")
         if location != "Pittsburgh, Pennsylvania" :
             print("Nachos has taken over")
             exit()
 
+    else:
+        print("That's Right!!'")
+        break
 
+time.sleep(2)
+print("Task three")
+killcode = input("Enter the kill code: ")
 
+if killcode == "1100" :
+    print("Entery Successful")
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+else:
+    print("Nachos has taken over")
+    exit()
